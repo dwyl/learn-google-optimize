@@ -1,4 +1,4 @@
-# How to use Google Content Experiments
+# How to use Google Content Experiments [Work in Progress]
 <img width="1900" alt="google-analytics-logo" src="https://github-cloud.s3.amazonaws.com/assets/4185328/10566203/1ccc209e-75d8-11e5-964c-57449ca02506.png">
 
 ## Outline
@@ -37,8 +37,10 @@ If you need some help with this, we've written a [Getting Started with A/B testi
 
 
 
-
-
+### While the experiment is happening
+You should _continually assess your priorities_. These are **suggested steps** but not hard and fast rules for _every_ situation.
++ Plan what your next experiment will be if your challenger fails or if it 'wins' (compared to the _control_)
+  + Start by aiming to improve on your winner rather than moving immediately onto a completely different experiment
 
 ## To-Do
 + [ ] Research multi-armed bandit and most recent defaults - is it still opt out?
@@ -51,4 +53,9 @@ If you need some help with this, we've written a [Getting Started with A/B testi
 ## Resources
 + http://rich-page.com/website-optimization/google-content-experiments-12-must-knows-before-using/
 + https://brianclifton.com/blog/2013/09/24/google-content-experiments/
+
+**Tips to improve your testing:** 
++ http://marketingland.com/12-tips-to-take-your-ab-multivariate-testing-to-the-next-level-50249
++ also for interpreting your results section: http://www.optimizeandprophesize.com/jonathan_mendezs_blog/2008/05/multivariate-te.html
++ and https://econsultancy.com/blog/6740-what-your-mother-never-taught-you-about-multivariate-testing/
 
