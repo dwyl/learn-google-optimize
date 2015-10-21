@@ -65,6 +65,7 @@ You should _continually assess your priorities_. These are **suggested steps** b
 
 + [ ] Make a note of the kill switch (to cut losses when experiment goes poorly)
 + [ ] Research CE's [API](https://developers.google.com/analytics/solutions/experiments-feature-reference)
++ [ ] Check if these negatives still exist (old article): https://vwo.com/blog/google-content-experiments-alternative/
 
 ## Resources
 + http://rich-page.com/website-optimization/google-content-experiments-12-must-knows-before-using/
