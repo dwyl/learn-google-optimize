@@ -135,25 +135,40 @@ Then click on "0 changes" to edit your variant.
 
 ![my-awesome-experiment details - optimize - google chrome_036](https://user-images.githubusercontent.com/21139983/30806664-9f9c07d4-a1ee-11e7-8e61-dd8b24397689.png)
 
-At this point you should be prompted to install the Chrome Optimize plugin, just click through and install it.
+At this point you should be prompted to install the Chrome Optimize plugin,
+just click through and install it.
 
-The editor has a really nice interface. you can click on an element, then click "Edit Element" to change the HTML, so you can add some classes. This works super well with [tachyons](https://github.com/dwyl/learn-tachyons)! you can also add extra CSS classes by clicking `<>`.
+The editor has a really nice interface. you can click on an element, then click
+"Edit Element" to change the HTML, so you can add some classes. This works
+super well with [tachyons](https://github.com/dwyl/learn-tachyons)! you can
+also add extra CSS classes by clicking `<>`.
 
 ![document - google chrome_037](https://user-images.githubusercontent.com/21139983/30806659-9f7c324c-a1ee-11e7-9870-990c48eff821.png)
 
-You can make a small change, or even add loads more HTML into the body if you want a big change
+You can make a small change, or even add loads more HTML into the body if you
+want a big change
 
 Click save and then click done when you've made your changes
-You can always add more variants or edit the ones that are there before you start the experiment, but once it's started you can't update anything, you're locked in to your choices, and you can't pause the experiment, only stop it and start a whole new one, so make sure you're happy with your variants!
+You can always add more variants or edit the ones that are there before you
+start the experiment, but once it's started you can't update anything, you're
+locked in to your choices, and you can't pause the experiment, only stop it and
+start a whole new one, so make sure you're happy with your variants!
 
-If you've done this all correctly then you'll have an option to start your experiment. If you're all ready, go ahead and click start!
+If you've done this all correctly then you'll have an option to start your
+experiment. If you're all ready, go ahead and click start!
 
 ![my-awesome-experiment details - optimize - google chrome_040](https://user-images.githubusercontent.com/21139983/30806663-9f9bd8b8-a1ee-11e7-9843-f82a1f98ead4.png)
 
 
 Your experiment is started!
 
-now, open your site in your browser, and open an incognito window with the same site, and hopefully you'll have both variants! It's a 50/50 chance so if you don't get the variant in either window just close the incognito window and open it again, and go back to your site. You have to close and open the incognito window, not just refresh so that Chrome acknowledges them as 2 separate sessions. Optimize is smart and wont send the same session to two different versions of the same page, that's confusing.
+now, open your site in your browser, and open an incognito window with the same
+site, and hopefully you'll have both variants! It's a 50/50 chance so if you
+don't get the variant in either window just close the incognito window and open
+it again, and go back to your site. You have to close and open the incognito
+window, not just refresh so that Chrome acknowledges them as 2 separate
+sessions. Optimize is smart and wont send the same session to two different
+versions of the same page, that's confusing.
 
 As you can see below, we have the same url, with 2 different versions!
 
@@ -176,9 +191,9 @@ just get lost
 
 
 ## Resources
-+ http://rich-page.com/website-optimization/google-content-experiments-12-must-knows-before-using/
-+ https://brianclifton.com/blog/2013/09/24/google-content-experiments/
-+ https://www.quora.com/What-are-the-practical-drawbacks-of-multi-armed-bandit-testing-as-applied-to-conversion-optimization
++ If you prefer to learn from videos then here is a really good video tutorial
+on setting up an A/B test with Google Optimize:
+https://www.youtube.com/watch?v=vDDMMbhvSVU
 
 **Tips to improve your testing:**
 + http://marketingland.com/12-tips-to-take-your-ab-multivariate-testing-to-the-next-level-50249
