@@ -174,13 +174,6 @@ experiments with new ideas
 'provide recommendations for change' based on your experiment results, they may
 just get lost
 
-## To-Do
-+ [ ] Is multi-armed bandit it still opt out?
-+ [ ] Discuss keeping close eye on experiments
-
-
-+ [ ] Make a note of the kill switch (to cut losses when experiment goes poorly)
-+ [ ] Research Optimize/Content Experiments' [API](https://developers.google.com/analytics/solutions/experiments-feature-reference)
 
 ## Resources
 + http://rich-page.com/website-optimization/google-content-experiments-12-must-knows-before-using/
