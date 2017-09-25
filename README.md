@@ -86,13 +86,20 @@ ga('send', 'pageview');
 
 + You're going to need to create an account on [Google Optimize](timize.google.com) and [Google Analytics](https://analytics.google.com/analytics/web/)
 + On the Optimize dashboard click on "Create Experiment"
+
+![my container experiments - optimize - google chrome_024](https://user-images.githubusercontent.com/21139983/30801531-7611722c-a1db-11e7-887c-3c3886b0ec23.png)
 + Add the name of the experiment and the url of the page you wish to do the experiment on
+
+![my container experiments - optimize - google chrome_025](https://user-images.githubusercontent.com/21139983/30801613-c4cd0b9c-a1db-11e7-898c-8ae16d009a6d.png)
 + Now you're going to need to create a property on Google Analytics, google has a really good guide for this so I'll leave it to them to show you how! : https://support.google.com/analytics/answer/1042508?hl=en
 + Put the tracking id from your property in the google analytics snippet in your code, right here:
 ```js
 ga('create', '<FILL THIS IN LATER>', 'auto');
 ```
 + Select the property you just made in the Optimize dashboard
+
+![my container experiments - optimize - google chrome_027](https://user-images.githubusercontent.com/21139983/30804791-97996e1c-a1e6-11e7-8ebf-e60a87af0412.png)
+
 + You'll be prompted with "get optimize snippet", this is the code we have pasted at the top of our html already. Still click through as it will give you a code you need.
 + Take the code given to you (starting with "GTM") and pop it into your snippet, here:
 ```js
@@ -100,20 +107,38 @@ ga('require', '<FILL THIS IN LATER>');
 ```
 + Click on your experiment to open it up
 + In the bottom left link your property
+
+![my-awesome-experiment details - optimize - google chrome_031](https://user-images.githubusercontent.com/21139983/30804552-c82ce816-a1e5-11e7-943e-10429d32a9b2.png)
+
+![my-awesome-experiment details - optimize - google chrome_033](https://user-images.githubusercontent.com/21139983/30804886-fca5d3b8-a1e6-11e7-9842-3e7fe559a4e3.png)
 + Add in an objective (We'll be going for session duration)
+
+![my-awesome-experiment details - optimize - google chrome_034](https://user-images.githubusercontent.com/21139983/30805194-49432904-a1e8-11e7-84d9-374340322e05.png)
+
 + Add a hypothesis of what you expect, this is an experiment afterall!
-+ Click on add a variant
-+ Then click the arrow to edit your variant.
++ Click on "New Variant"
++ Give your variant a relevant and memorable name!
++ Then click on "0 changes" to edit your variant.
+
+![my-awesome-experiment details - optimize - google chrome_036](https://user-images.githubusercontent.com/21139983/30805335-e50734e8-a1e8-11e7-874a-e81a09d3a5c8.png)
+
 + At this point you should be prompted to install the Chrome Optimize plugin, just click through and install it.
-+ The editor has a really nice interface. you can click on an element and change the html, so you can add some classes. This works super well with tachyons! you can also add extra CSS classes by clicking `<>`.
++ The editor has a really nice interface. you can click on an element, then click "Edit Element" to change the HTML, so you can add some classes. This works super well with tachyons! you can also add extra CSS classes by clicking `<>`.
+
+![document - google chrome_037](https://user-images.githubusercontent.com/21139983/30805501-9a38ad6a-a1e9-11e7-8447-500efc78ba9e.png)
+
 + You can make a small change, or even add loads more HTML into the body if you want a big change
 + Click save and then click done when you've made your changes
 + You can always add more variants or edit the ones that are there before you start the experiment, but once it's started you can't update anything, you're locked in to your choices, and you can't pause the experiment, only stop it and start a whole new one, so make sure you're happy with your variants!
 + If you've done this all correctly then you'll have an option to start your experiment. If you're all ready, go ahead and click start!
+
+![my-awesome-experiment details - optimize - google chrome_040](https://user-images.githubusercontent.com/21139983/30805621-1765d18c-a1ea-11e7-9610-24e176fd33fc.png)
+
 + Your experiment is started!
 + now, open your site in your browser, and open an incognito window with the same site, and hopefully you'll have both variants! It's a 50/50 chance so if you don't get the variant in either window just close the incognito window and open it again, and go back to your site. (you have to close and open the incognito window, not just refresh so that it acknowledges them as 2 separate sessions. Optimize is smart and wont send the same session to two different versions of the same page, that's confusing" )
 + Same url, 2 different versions!
 
+![workspace 1_024](https://user-images.githubusercontent.com/21139983/30805725-9653f5a0-a1ea-11e7-9e4a-d565c8f2b76f.png)
 
 ### While the experiment is happening
 You should _continually assess your priorities_. These are **suggested steps**
@@ -147,34 +172,3 @@ just get lost
 + http://marketingland.com/12-tips-to-take-your-ab-multivariate-testing-to-the-next-level-50249
 + also for interpreting your results section: http://www.optimizeandprophesize.com/jonathan_mendezs_blog/2008/05/multivariate-te.html
 + and https://econsultancy.com/blog/6740-what-your-mother-never-taught-you-about-multivariate-testing/
-
-### Possible FAQ
-+ Should I choose A/B or MVT?
-
-
-
-+ first take your site and add the code snippets at the top of the head (we'll be filling in the unique ids later)
-+ create an account on google optimize and google analytics
-+ click "create experiment"
-+ add the name of the experiment and the url of the page you will be playing with
-+ now you're going to need to create a property
-+ https://support.google.com/analytics/answer/1042508?hl=en
-+ put the tracking id from your property in you google analytics snippet (as the second argument to the ga function whos first argument is `create`)
-+ select your property in google optimize and link it
-+ you'll be prompted with "get optimize snippet". do it. and follow the instructions on screen
-+ You will now have a code starting with `UA` being passed to the create function and a code starting with `GTM` being passed to the require function
-+ You now need to install the optimize chrome plugin, you will be prompted to do so, install it
-+ open your experiment
-+ link your property
-+ add an objective (we'll be doing session duration)
-+ add a hypothesis
-+ add a variant
-+ edit your variant
-+ The editor has a really nice interface. you can click on an element and change the html, so you can add some classes. This works super well with tachyons! you can also add extra CSS classes by clicking `<>`.
-+ You can make a small change, or even add loads more HTML into the body if you want a big change
-+ click save and then done when you've made you changes
-+ If you've done this all correctly then you'll have an option to start your experiment. If you're all ready, go ahead and click start!
-+ You can always add more variants or edit the ones that are there before you start the experiment, but once it's started you can't update anything, you're locked in to your choices, and you can't pause the experiment, only stop it and start a whole new one, so make sure you're happy with your variants!
-+ your experiment is started!
-+ now, open your site in your browser, and open an incognito window with the same site, and hopefully you'll have both variants! It's a 50/50 chance so if you don't get the variant in either window just close the incognito window and open it again, and go back to your site. (you have to close and open the incognito window, not just refresh so that it acknowledges them as 2 separate sessions. Optimize is smart and wont send the same session to two different versions of the same page, that's confusing")
-+ same url, 2 different versions!
