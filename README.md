@@ -39,7 +39,7 @@ If you need some help with this, we've written a [Getting Started with A/B testi
 This option is _on_ by default but you can **switch it off** in CE by ensuring `'Distribute traffic evenly across all variations'` is switched on in the Advanced options   
 ![switch-off-multi-armed-bandit](https://cloud.githubusercontent.com/assets/4185328/10583984/cecf67ba-7687-11e5-9d1d-57f96faea3bd.png)
 
-  + The _multi-armed bandit_ is a method that CE uses, which looks at your experiment twice a day and **redirects a slightly greater proportion of your traffic** to the variation that appears to be more successful
+    + The _multi-armed bandit_ is a method that CE uses, which looks at your experiment twice a day and **redirects a slightly greater proportion of your traffic** to the   that appears to be more successful
   + In theory, this provides you with a more successful overall experiment because you don't have to 'wait until the end of the experiment' to implement your winning strategy
   + There are [many critics of this algorithm](https://brianclifton.com/blog/2013/09/24/google-content-experiments/) as it can lead to skewed results if the data is not analysed correctly
   + But there are also some companies that have [built their business on this model](https://mynaweb.com/) as it can also be an efficient testing tool
@@ -51,19 +51,42 @@ This option is _on_ by default but you can **switch it off** in CE by ensuring `
 
 
 ## Setting up a Multivariate test
-+ Start a new experiment, this time selecting "Multivariate" rather than A/B
-test
-+ Click on your new experiment to enter the dashboard
-+ Add and objective and hypothesis, just as you would for the A/B test
-+ Now you're going to be adding your variants, this is where things are different! 
-+ Each section is one set of variables, so the variants within each section will never be combined with eachother, but they will be combined with all of the variants of all of the other sections.
-+ Editing a variant is exactly the same as it is for an A/B test.
-+ We're going to add 2 extra options for the colour of the button and 2 extra
+Start a new experiment, this time selecting "Multivariate" rather than A/B
+test.
+
+![my container experiments - optimize - google chrome_025](https://user-images.githubusercontent.com/21139983/30857717-bf56d740-a2b4-11e7-9aa1-f491e73509e3.png)
+
+Click on your new experiment to enter the dashboard.
+
+Add and objective and hypothesis, just as you would for the A/B test
+Now you're going to be adding your variants, this is where things are different!
+
+![multivariate-practice details - optimize - google chrome_026](https://user-images.githubusercontent.com/21139983/30857720-bf5b8c40-a2b4-11e7-8ab2-47a6dd01d4af.png)
+
+Each section is one set of variables, so the variants within each section will never be combined with eachother, but they will be combined with all of the variants of all of the other sections.
+
+Editing a variant is exactly the same as it is for an A/B test.
+
+We're going to add 2 extra options for the colour of the button and 2 extra
 options for the call to action, which totals 3 for each including the original
 controls, and Optimize tells us how many total options we have, in this case, 9.
-+ If you want to see what the different combinations look like you can click on
-the Combinations tab. You can click on the image of a screen with a phone, and it will give you the option to preview the combination, if you click "Web Preview" you will have your page loaded with that combination on it. This preview will stay active on your page until deactivated, so anyone visitng will see this variant. It can be worth checking all of them just to make sure they are as you expect them to be, as you won't be able to change them once the experiment has started.   
-+ Once you've set all of this up, you can start your experiment!
+
+![multivariate-practice details - optimize - google chrome_028](https://user-images.githubusercontent.com/21139983/30857719-bf59dde6-a2b4-11e7-8d68-c761fedcb304.png)
+
+If you want to see what the different combinations look like you can click on
+the Combinations tab. You can click on the image of a screen with a phone, and it will give you the option to preview the combination, if you click "Web Preview" you will have your page loaded with that combination on it.
+
+This preview will stay active on your page until deactivated, so anyone visitng will see this variant. To deactivate it, click the (now blue) screen icon again and select "Turn Off Preview".
+
+It can be worth checking all of them just to make sure they are as you expect them to be, as you won't be able to change them once the experiment has started.   
+
+![multivariate-practice details - optimize - google chrome_029](https://user-images.githubusercontent.com/21139983/30857718-bf577628-a2b4-11e7-88ce-721e3c8cf977.png)
+
+Once you've set all of this up, you can start your experiment!
+
+It would take a while and be annoying to have load up every variant by
+opening and closing incognito windows, but as long as you get one variant other
+than your original in a different session then you know that your experiment is working :+1:.
 
 
 
