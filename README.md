@@ -10,6 +10,7 @@
 [Google Optimize (GO)](LINKYLINKHERE) is a free tool provided by Google as part
 of [Google Analytics](analytics.google.com).
 
+
 It **allows you to set up [A/B, multivariate or redirect tests](https://github.com/iteles/learn-ab-and-multivariate-testing)** to
 determine whether changes made to your web pages/apps are moving you towards your
 [pre-determined goals](https://github.com/iteles/learn-ab-and-multivariate-testing#2-what-is-your-goal) or away from them.
@@ -33,6 +34,7 @@ for more specific, smaller A/B tests
 ## Before you Start
 
 ### Understand what you want to achieve
+
 Our your problem areas, set your goals, formulated your hypothesis and designed
 your variations.
 If you need some help with this, we've written a
@@ -54,12 +56,12 @@ with a really handy Chrome extension that allows you to make changes to the
 HTML/CSS/text of any test page and then create tests based on those changes.
 + **Multivariate:** WiP
 
-
 ## Setting up your experiment
 [Work in Progress]
 
 To do an experiment you will need the Chrome browser, and a live website, which you have control over the code of.
 
+## Setting up an A/B test
 
 The first thing to do to set up Google Optimize is going to be to add these code snippets right at the top of the `head` of the page you want to test. Don't worry, we'll fill the codes in later.
 
@@ -174,12 +176,51 @@ As you can see below, we have the same url, with 2 different versions!
 
 ![workspace 1_024](https://user-images.githubusercontent.com/21139983/30806668-9fafb1d0-a1ee-11e7-8630-64749885781e.png)
 
+## Setting up a Multivariate test
+Start a new experiment, this time selecting "Multivariate" rather than A/B
+test.
+
+![my container experiments - optimize - google chrome_025](https://user-images.githubusercontent.com/21139983/30857717-bf56d740-a2b4-11e7-9aa1-f491e73509e3.png)
+
+Click on your new experiment to enter the dashboard.
+
+Add and objective and hypothesis, just as you would for the A/B test
+Now you're going to be adding your variants, this is where things are different!
+
+![multivariate-practice details - optimize - google chrome_026](https://user-images.githubusercontent.com/21139983/30857720-bf5b8c40-a2b4-11e7-8ab2-47a6dd01d4af.png)
+
+Each section is one set of variables, so the variants within each section will never be combined with eachother, but they will be combined with all of the variants of all of the other sections.
+
+Editing a variant is exactly the same as it is for an A/B test.
+
+We're going to add 2 extra options for the colour of the button and 2 extra
+options for the call to action, which totals 3 for each including the original
+controls, and Optimize tells us how many total options we have, in this case, 9.
+
+![multivariate-practice details - optimize - google chrome_028](https://user-images.githubusercontent.com/21139983/30857719-bf59dde6-a2b4-11e7-8d68-c761fedcb304.png)
+
+If you want to see what the different combinations look like you can click on
+the Combinations tab. You can click on the image of a screen with a phone, and it will give you the option to preview the combination, if you click "Web Preview" you will have your page loaded with that combination on it.
+
+This preview will stay active on your page until deactivated, so anyone visitng will see this variant. To deactivate it, click the (now blue) screen icon again and select "Turn Off Preview".
+
+It can be worth checking all of them just to make sure they are as you expect them to be, as you won't be able to change them once the experiment has started.   
+
+![multivariate-practice details - optimize - google chrome_029](https://user-images.githubusercontent.com/21139983/30857718-bf577628-a2b4-11e7-88ce-721e3c8cf977.png)
+
+Once you've set all of this up, you can start your experiment!
+
+It would take a while and be annoying to have load up every variant by
+opening and closing incognito windows, but as long as you get one variant other
+than your original in a different session then you know that your experiment is working :+1:.
+
 ### While the experiment is happening
 You should _continually assess your priorities_. These are **suggested steps**
 but not hard and fast rules for _every_ situation.
 + Plan what your next experiment will be if your challenger fails or if it 'wins'
 (compared to the _control_)
   + Start by aiming to improve on your winner rather than moving immediately onto a completely different experiment
+
 
 ### After the experiment
 + **Remember:** Just because a specific design 'won' in an experiment doesn't
@@ -199,3 +240,4 @@ https://www.youtube.com/watch?v=vDDMMbhvSVU
 + http://marketingland.com/12-tips-to-take-your-ab-multivariate-testing-to-the-next-level-50249
 + also for interpreting your results section: http://www.optimizeandprophesize.com/jonathan_mendezs_blog/2008/05/multivariate-te.html
 + and https://econsultancy.com/blog/6740-what-your-mother-never-taught-you-about-multivariate-testing/
+
