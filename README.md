@@ -7,9 +7,9 @@
   + [Before you Start](#before-you-start)
 
 ## What?
+
 [Google Optimize (GO)](LINKYLINKHERE) is a free tool provided by Google as part
 of [Google Analytics](analytics.google.com).
-
 
 It **allows you to set up [A/B, multivariate or redirect tests](https://github.com/iteles/learn-ab-and-multivariate-testing)** to
 determine whether changes made to your web pages/apps are moving you towards your
@@ -34,7 +34,6 @@ for more specific, smaller A/B tests
 ## Before you Start
 
 ### Understand what you want to achieve
-
 Our your problem areas, set your goals, formulated your hypothesis and designed
 your variations.
 If you need some help with this, we've written a
@@ -221,7 +220,6 @@ but not hard and fast rules for _every_ situation.
 (compared to the _control_)
   + Start by aiming to improve on your winner rather than moving immediately onto a completely different experiment
 
-
 ### After the experiment
 + **Remember:** Just because a specific design 'won' in an experiment doesn't
 make it untouchable - don't be afraid of making it the control in further
@@ -241,3 +239,6 @@ https://www.youtube.com/watch?v=vDDMMbhvSVU
 + also for interpreting your results section: http://www.optimizeandprophesize.com/jonathan_mendezs_blog/2008/05/multivariate-te.html
 + and https://econsultancy.com/blog/6740-what-your-mother-never-taught-you-about-multivariate-testing/
 
+### FAQ
+#### Should I choose A/B or MVT?
+For more information on the differences between, and different use cases of A/B and Multivariate testing then we recommend having a look at our [`learn-ab-and-multivariate-testing`](https://github.com/foundersandcoders/international/issues/156) repo.
